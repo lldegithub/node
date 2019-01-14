@@ -27,7 +27,7 @@ jQuery(($) => {
         }
         $.ajax({
             type: "post",
-            url: "http://localhost:3000/setting/delete",
+            url: "http://47.106.69.157:3000/setting/delete",
             data: obj,
             success(res) {
                 if (res == "删除成功") {

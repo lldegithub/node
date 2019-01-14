@@ -23,7 +23,7 @@ jQuery(($) => {
         var data = new FormData();
         // 单图上传，默认选第一张，如果是多图的话，就要for循环遍历fileNode.files数组，并全部append到data里面传输
         data.append("abc", fileNode.files[0]);
-        xmlhttp.open("post", "http://localhost:3000/file/upload", true);
+        xmlhttp.open("post", "http://47.106.69.157:3000/file/upload", true);
         //不要缓存
         //xmlhttp.setRequestHeader("If-Modified-Since", "0");
         //提交请求
@@ -41,7 +41,7 @@ jQuery(($) => {
         console.log(img);
         $.ajax({
             type: "post",
-            url: "http://localhost:3000/setting/plus",
+            url: "http://47.106.69.157:3000/setting/plus",
             data: {
                 name,
                 sex,

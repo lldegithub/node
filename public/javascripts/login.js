@@ -8,7 +8,7 @@ jQuery(($) => {
         let password = inputPassword.val();
         $.ajax({
             type: "post",
-            url: "http://localhost:3000/users/login",
+            url: "http://47.106.69.157:3000/users/login",
             data: {
                 name,
                 password

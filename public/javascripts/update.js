@@ -83,7 +83,7 @@ jQuery(($) => {
         let str = JSON.stringify([obj1, obj2]);
         $.ajax({
             type: "post",
-            url: "http://localhost:3000/setting/update",
+            url: "http://47.106.69.157:3000/setting/update",
             contentType: "application/json",
             // dataType: "json",
             data: str,

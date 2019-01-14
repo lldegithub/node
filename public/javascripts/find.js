@@ -26,7 +26,7 @@ jQuery(($) => {
                 return new Promise((resolve, reject) => {
                     $.ajax({
                         type: "get",
-                        url: "http://localhost:3000/users/getUsers",
+                        url: "http://47.106.69.157:3000/users/getUsers",
                         data: {},
                         success(res) {
                             resolve(res);
@@ -41,7 +41,7 @@ jQuery(($) => {
                         headers: {
                             token: localStorage.getItem("token")
                         },
-                        url: "http://localhost:3000/users/autoLogin",
+                        url: "http://47.106.69.157:3000/users/autoLogin",
                         success(data) {
                             resolve(data);
                         }
